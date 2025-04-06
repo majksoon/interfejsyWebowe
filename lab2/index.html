@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ToDo List - lab2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>ToDo List</h1>
+      <div id="new-task">
+        <input type="text" id="task-input" placeholder="Wpisz nowe zadanie" />
+        <select id="list-select" size="5">
+          <option value="lista1">Mało pilne</option>
+          <option value="lista2">Pilne</option>
+        </select>
+        <button id="add-task-btn">Dodaj zadanie</button>
+      </div>
+      <div id="new-category">
+        <input
+          type="text"
+          id="category-input"
+          placeholder="Wpisz nową kategorię"
+        />
+        <button id="add-category-btn">Dodaj kategorię</button>
+      </div>
+      <div id="search">
+        <input type="text" id="search-input" placeholder="Wyszukaj zadanie" />
+        <label
+          ><input type="checkbox" id="case-insensitive" />
+          Case-insensitive</label
+        >
+      </div>
+      <div class="lists">
+        <div class="list" id="lista1">
+          <h2>Mało pilne</h2>
+          <ul></ul>
+        </div>
+        <div class="list" id="lista2">
+          <h2>Pilne</h2>
+          <ul></ul>
+        </div>
+        <div class="list" id="listaUsuniete">
+          <h2>Usunięte</h2>
+          <ul id="deletedList"></ul>
+        </div>
+      </div>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <p id="modal-message"></p>
+        <button id="modal-confirm">Tak</button>
+        <button id="modal-cancel">Anuluj</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
